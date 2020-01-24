@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Ady Kini</Authors>
+    <Company>Live Inbox</Company>
+    <Description>encodes or decodes a file into Base64</Description>
+    <Copyright>(c) CopyLeft</Copyright>
+    <PackageLicenseExpression>GPL</PackageLicenseExpression>
+    <PackageReleaseNotes>Base64Tool --help</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.7.82" />
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="ShellProgressBar" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
